@@ -30,7 +30,6 @@ spec:
     - ./backstage-plugin-scaffolder-backend-module-azure.yaml
     - ./backstage-plugin-scaffolder-backend-module-bitbucket-cloud.yaml
     - ./backstage-plugin-scaffolder-backend-module-bitbucket-server.yaml
-    - ./backstage-plugin-scaffolder-backend-module-gerrit.yaml
     - ./immobiliarelabs-backstage-plugin-gitlab-backend.yaml
     - ./immobiliarelabs-backstage-plugin-gitlab.yaml
     - ./pagerduty-backstage-plugin-backend.yaml
