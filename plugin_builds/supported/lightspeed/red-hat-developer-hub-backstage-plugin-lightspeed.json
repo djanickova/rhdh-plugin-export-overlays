@@ -1,7 +1,7 @@
 {
   "red-hat-developer-hub-backstage-plugin-lightspeed": {
     "workspacePath": "lightspeed/plugins/lightspeed",
-    "registryReference": "quay.io/rhdh/red-hat-developer-hub-backstage-plugin-lightspeed:1.11--2.8.5",
+    "registryReference": "quay.io/rhdh/red-hat-developer-hub-backstage-plugin-lightspeed:1.11--2.9.0",
     "digest": "sha256:2498b0ee62cae8b2a8ccdb5539faa4ecbdd0964f56f9c6c625e9b6bcd2d0f3da",
     "build-date": "2026-06-02T17:34:06Z",
     "upstream": "https://github.com/redhat-developer/rhdh-plugin-export-overlays/tree/main @ 710868b6ee9c4a596c5e3b5b5988193f2b8873ec",

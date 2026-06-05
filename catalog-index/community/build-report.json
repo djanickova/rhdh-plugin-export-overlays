@@ -11,7 +11,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:62810995b060834821de573af6228387c4254bc593857e02b39238f4b990b17c"
+          "digest": "sha256:e5ee0f7b9c70fbc53989325d90f8b9aa5e02d63c7ee4138a30717bf78ac4abf7"
         },
         "dpdy": {
           "status": "skip"
@@ -33,7 +33,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:16eab14f53ec6176e93b7643bc402ffd78f011e8d991547cf85ed4d3467b441d"
+          "digest": "sha256:faba337e0c09a21bb990f58d66e948b2f215fd5668c47e31f75cf19d488df907"
         },
         "dpdy": {
           "status": "skip"
@@ -55,7 +55,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:9e7d3316e033f474f33e8f1aedf77696141bc5b0b04d256e70a4164b8cdd9bfd"
+          "digest": "sha256:356c0505db35715bf23d8963418f49318b07be08fd4e4419a673ac1ee92f5689"
         },
         "dpdy": {
           "status": "skip"
@@ -77,7 +77,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:fad9a6c5712c47122dddbf6f14041808571aae65d8ff39980eb98cc60c3e9898"
+          "digest": "sha256:c29db2b078e5364047cda170c1685650462835cc8a38d29314db27cf31853c59"
         },
         "dpdy": {
           "status": "skip"
@@ -99,7 +99,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:8d7b175b8cea48a8a75e3a47e3360b21b251bf591c9756240f4888f63c6934b4"
+          "digest": "sha256:989fa67bed88c71e1af40f40a6f25949932b842d928937270b5a27bea9f19f93"
         },
         "dpdy": {
           "status": "skip"
@@ -121,7 +121,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:4e11e082ddd472f305df7408e44d1e7e7f82147ce54beb4039990ebe44f74c17"
+          "digest": "sha256:0de85b0049e21d6b268a87ef865e1f9407c65c9fd977b54e9ae08fec55a84999"
         },
         "dpdy": {
           "status": "skip"
@@ -143,7 +143,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:e67b1214cd80d6edded534d216801ad0b929195698774595f4301b13c89601c6"
+          "digest": "sha256:2e8c1d30ca77174e52407700f98a61f203174ad2cbf025cdf9e062536bab720c"
         },
         "dpdy": {
           "status": "skip"
@@ -165,7 +165,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:a7806b4559db51e833a369a29b7e2e24eb68b105ed0f3f039b614bf14a8578fc"
+          "digest": "sha256:2becad77ee5a04b36a885cc4e381fc7c6239b6d8ec47c955aa6c89aa5314fc4f"
         },
         "dpdy": {
           "status": "skip"
@@ -187,7 +187,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:cb390967dc691343c0c0db2764d3027112fbfc4e2582decddea4f2eb8e1d0304"
+          "digest": "sha256:934538d0248d748232a3f6b27a43880df9d4938a3de7e837a0037df1523f79f5"
         },
         "dpdy": {
           "status": "skip"
@@ -209,7 +209,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:98a81a931839528cf499be2873ed3eb52049a6a9d6e858c9cf5a839d04ef0633"
+          "digest": "sha256:cb658e08bb626ea0115541f051da605c3f5ce2612c519f373832db4c344e0bac"
         },
         "dpdy": {
           "status": "skip"
@@ -231,20 +231,19 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:2efc97e48532e5deb49e5ae5fe1549b2e8547c5b827ff469b463b00fb9c1c16d"
+          "digest": "sha256:5ad42c215b61e61499a856b76bccb8be2f310be842309dd65d0f4a6176885071"
         },
         "dpdy": {
           "status": "skip"
         },
         "catalog-index": {
-          "status": "fail",
-          "reason": "Image not found in registry: ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-scaffolder-backend-module-gerrit:bs_1.49.4__0.2.19"
+          "status": "pass"
         }
       },
       "package": "@backstage/plugin-scaffolder-backend-module-gerrit",
       "version": "0.2.19",
       "workspace": "backstage",
-      "overall": "fail"
+      "overall": "pass"
     },
     "backstage-community-plugin-dynatrace": {
       "stages": {
@@ -254,7 +253,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:5563adb6b9c48c750c18c4f2593cf1255618c13e05a7619b25e2ca8212fca431"
+          "digest": "sha256:93e9ee9d03fd3281c89cedf8125104c02f0688bd71eb1738bc9c78e8cef7a10b"
         },
         "dpdy": {
           "status": "skip"
@@ -276,7 +275,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:2187880b13c99945f6926c4a05f18c439a018eac3ecd48da0396dd1bae675164"
+          "digest": "sha256:c09a596e77139ce7df4aa21f73b4cdcbbc052d0e8df4fb2329c2c0abaa33a4ef"
         },
         "dpdy": {
           "status": "skip"
@@ -298,7 +297,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:04b4e418fad5bd9e907b9410f77256fc381afad44573a5bb0bf07a5c8bdb3f13"
+          "digest": "sha256:9264c1b7a4edd224cb8fa1dd8ebddaae7a26958591554a4f184f62607ab570fd"
         },
         "dpdy": {
           "status": "skip"
@@ -320,7 +319,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:b367404a43f16e74f7c5b2d0b769907913905d04703030ad87f74259cf69caaa"
+          "digest": "sha256:3d31c16b31c491c42620e9e2172ef26d7f9bfcc4056152f82a5658907bc8ce6a"
         },
         "dpdy": {
           "status": "skip"
@@ -342,7 +341,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:aa52272e46d99b8828d759a1a83d884a8855dff2176c7f909d1e3c8e251a0462"
+          "digest": "sha256:9f758d985ae10c0c9a65931c0dd29c15886315305f3a0fb839517d91761a133f"
         },
         "dpdy": {
           "status": "skip"
@@ -364,7 +363,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:7947405d011b42c466f21f8f9bd41003ca3b8a63eb8ee1c0106f48f4206adcd9"
+          "digest": "sha256:2a984e93b88becd0d91f031a66af5e0a7a58f782c2c4c94aa61e122ec948a458"
         },
         "dpdy": {
           "status": "skip"
@@ -386,7 +385,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:8f68e47e05659c7f15a93072a43bfb271a34a13939dcf5882f078dd7c958cdd4"
+          "digest": "sha256:ed1c26d284595babb3689bb83efecd3b252172f5c38f66210691f7987bae286d"
         },
         "dpdy": {
           "status": "skip"
@@ -408,7 +407,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:fb63817fc0ead3b91d93bc68d50e158d7a489bc97aa13103f775f9306815f32a"
+          "digest": "sha256:0befec10ca6867216f3f46071ee792def1572ef84575014d45f3422fbebe0da2"
         },
         "dpdy": {
           "status": "skip"
@@ -430,7 +429,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:3f14b8c32300e6aff0d48cb7438ce8575222fe3ef023948858fa7aa4619ec373"
+          "digest": "sha256:099573168a57403ca0099c9869b3e9e815378ab49e756b8f990398fd7693b425"
         },
         "dpdy": {
           "status": "skip"
@@ -452,7 +451,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:a6496c871a0a88496c3be9f5e8de10d261dfe35f4d2534733fb95f638f9605a8"
+          "digest": "sha256:fd32a5994c1cf5e52cb9e4733d633e845e5a56ca1eb59d96b56194f7716a730f"
         },
         "dpdy": {
           "status": "skip"
@@ -474,7 +473,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:066a9882e57244580235c2646a010ae1f4da21e206512d57e6cc14d6b0f528d8"
+          "digest": "sha256:c2d665dd21a464d6490f2c4249fcadf6f2f76fc555a71447f12c7527d4881609"
         },
         "dpdy": {
           "status": "skip"
@@ -496,7 +495,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:798a865a9b3ac65234c8ae253aeb277483410fa0b271991059f2abff8b0873eb"
+          "digest": "sha256:e51a490f55d08b1ef6fb5d6655757241014f12aaca1fa2dcf643a842ce307c6d"
         },
         "dpdy": {
           "status": "skip"
@@ -518,7 +517,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:ddf0fe27e073f6bb59995a69f05c892a39b3e18bbca66a96c79177574282e78d"
+          "digest": "sha256:68040760e02724062fa3c5a82edec1787b8b93623c4576a4503158e21944af5e"
         },
         "dpdy": {
           "status": "skip"
@@ -540,7 +539,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:d054dbee270294ddd63e9946a0395dc00a23954c7016fda2ab43aadc588d8c07"
+          "digest": "sha256:15128f76a6edca410f0aa83f48b63fbdbfc5c319404ee9cb577969a2140f2a56"
         },
         "dpdy": {
           "status": "skip"
@@ -562,7 +561,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:1345b109cbd14c1c75dc7b0f259897829d6c0da21c8599f0f786f4c19eb62dda"
+          "digest": "sha256:186f7ef70952f2a71f4f509f8901e1370f4306bae7fc6bad18af7af71480bf49"
         },
         "dpdy": {
           "status": "skip"
@@ -584,7 +583,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:bc014fe439e85334d3e06f0218eea40a9edf3fca5e49c9665d191bae00b30750"
+          "digest": "sha256:57abeb061774227e8a8b57c4d454a53d90ea014005c158dd5727025d97983ca2"
         },
         "dpdy": {
           "status": "skip"
@@ -606,7 +605,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:112f7262e50fd6b07afeda36d009433ea2afdd6647529d764da80e18caf8a936"
+          "digest": "sha256:383f9e38b881d5cfc9d0efae8b1cfa7918c91fba58ea7888410f54e317817745"
         },
         "dpdy": {
           "status": "skip"
@@ -628,7 +627,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:dd4b106cbb27bc8b5eaf46d8646d4c1fca97381f9a8b73aaeac65971898d8a47"
+          "digest": "sha256:e05b6ad6d2a44ebb0751b5d38ecba522ac853bcdd87300ef7857e760fd94e47d"
         },
         "dpdy": {
           "status": "skip"
@@ -650,7 +649,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:7b97db9d8f36f1b68296b82325ce833c8c92ae9061ff0aa46db51d03d89132c6"
+          "digest": "sha256:4d28b9c56e88504bb0c9ed49071a080c0681f80677939ce868bbaf5dd8fdb620"
         },
         "dpdy": {
           "status": "skip"
@@ -672,7 +671,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:f41733273e834af95a213a8a9b719cd0b658c30ff00259298a8c36faac714fea"
+          "digest": "sha256:2027a8252b6b047b332f28b45214f522b88379c69cb2e8f5fcf71ba3f00cba26"
         },
         "dpdy": {
           "status": "skip"
@@ -694,7 +693,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:eebdbc743db857cc45df9b16f3b9428d4dd9a7f6636c5ce02566821f0538a242"
+          "digest": "sha256:22e156a3add628ae198680377ad6a8d0dcba2cbf4ce1b7a6ab85ed24680d3aed"
         },
         "dpdy": {
           "status": "skip"
@@ -716,7 +715,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:e43b0384f5af3c8378c0046eb61be88f59c21703addcbed40ac3b342212b4d7b"
+          "digest": "sha256:f2bcdb04b2a4e495a42876c0ed6c5aa85b8d804e5571b9a999b92c7157eae16d"
         },
         "dpdy": {
           "status": "skip"
@@ -738,7 +737,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:47ea50bb9b9b8ed5d54203c52af2695a9b1b51cd067622da5ad4f953981774bb"
+          "digest": "sha256:cfe02f275eb096a67bc5a89435aa0452abbfdfad3271bcdb1f7fbde8ffe67ab5"
         },
         "dpdy": {
           "status": "skip"
@@ -760,7 +759,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:dbef81ac87c08fa4350ad20ede167ac38f9e991088f24fa6018d605348473cdc"
+          "digest": "sha256:a01fb0ae8d467a8b9ce6e9f4be958a7cc50d1f1404a7c32d26d450620d674d21"
         },
         "dpdy": {
           "status": "skip"
@@ -782,7 +781,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:8009d54ffa294be12460886b58f9ab9289393d1d53e47cd56428e46cbaed9462"
+          "digest": "sha256:a675e2df6bda1da0d8789e32a49f33d67cb3455baf586cb7a31608cea20a1faa"
         },
         "dpdy": {
           "status": "skip"
@@ -804,7 +803,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:1f3ad9919ffff54f738bcef8b57e5ec6379e5227098978328c2acd47be1086b3"
+          "digest": "sha256:36cb47920422c64a472e23f0484f76c68f04c4f20e913f55fbf45e555bdebfd3"
         },
         "dpdy": {
           "status": "skip"
@@ -826,7 +825,7 @@
         },
         "registry-enrich": {
           "status": "pass",
-          "digest": "sha256:a70c4b4f6c417e0ee069d88ab307a9fa24694c1a815e171ef29b7da66bbc7aad"
+          "digest": "sha256:26c42e4556c19f022e6879970ea8b41db303591388029ecffec8e6d1b2667f8e"
         },
         "dpdy": {
           "status": "skip"
@@ -843,8 +842,8 @@
   },
   "summary": {
     "total": 38,
-    "succeeded": 37,
-    "failed": 1
+    "succeeded": 38,
+    "failed": 0
   },
-  "status": "partial"
+  "status": "success"
 }
