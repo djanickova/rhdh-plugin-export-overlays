@@ -139,7 +139,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:e42410b510357c95b0f2692118ce1987eb28054256f379bd03d102924c4375f4"
+          "digest": "sha256:c4e6a8d75f586e8ac1f47251bdd345765c99ed7929c42e905f5906c8e0f23962"
         }
       },
       "package": "@backstage/plugin-catalog-backend-module-bitbucket-cloud",
@@ -165,7 +165,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:05d235ce40078f0c9bbdbdc1598d8dbb5a4d1ffe2428dc96a640ebff8596fa04"
+          "digest": "sha256:1cd7d92a09bb8de77889bdc0d3d6866d98168ed8da1830ebe128592cd6f551d1"
         }
       },
       "package": "@backstage/plugin-catalog-backend-module-bitbucket-server",
@@ -567,7 +567,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:0e6b34b09ec7b01816b386729ab55fa4eb2ddb385d5e13aa34d29349f5cc691a"
+          "digest": "sha256:0739eac1e8a14f98335d80133a09ed61a78a0d5848d4b6697117129776746b55"
         }
       },
       "package": "@backstage-community/plugin-quay",
@@ -593,7 +593,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:f11d99ea56fd3a2babb62c72afe018bb2a1849a1cf1e3eb25489e5578e40b2f1"
+          "digest": "sha256:c57eb012af8ced7339c50fdc80f5767ba1477988394ffbdd6b5c79c47472ca54"
         }
       },
       "package": "@backstage-community/plugin-scaffolder-backend-module-quay",
@@ -931,7 +931,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:4f5ba6b4d5b8f528fb1e86d22a4cc0cac7ee72af10305539ff218177497a36be"
+          "digest": "sha256:8069246bcdc42c0e3d7e66ad56e129e1d89d0a6648c8861243e9d50f9e0de3df"
         },
         "dpdy": {
           "status": "skip"
