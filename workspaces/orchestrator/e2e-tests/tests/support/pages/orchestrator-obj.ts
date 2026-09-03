@@ -2,10 +2,11 @@ import { Page, Locator } from "@red-hat-developer-hub/e2e-test-utils/test";
 
 export const ORCHESTRATOR_COMPONENTS = {
   workflowsHeading: (page: Page): Locator =>
-    page.getByRole("heading", { name: "Workflows" }),
+    page.getByText(/Workflows \(\d+\)/).last(),
   workflowLink: (page: Page, workflowName: string | RegExp): Locator =>
     page.getByRole("link", { name: workflowName }),
-  runButton: (page: Page): Locator => page.getByRole("button", { name: "Run" }),
+  runButton: (page: Page): Locator =>
+    page.getByRole("button", { name: "Run", exact: true }),
   breadcrumbNav: (page: Page): Locator =>
     page.getByRole("navigation", { name: /breadcrumb/i }),
   templateLink: (page: Page, name: string | RegExp): Locator =>
@@ -24,6 +25,9 @@ export const ORCHESTRATOR_COMPONENTS = {
     page.getByRole("button", { name: "Start Over" }),
   workflowsTab: (page: Page): Locator =>
     page.getByRole("tab", { name: "Workflows" }),
+  // NFS catalog entity header: same control is often a link, not a tab.
+  workflowsLink: (page: Page): Locator =>
+    page.getByRole("link", { name: "Workflows", exact: true }),
   nextButton: (page: Page): Locator =>
     page.getByRole("button", { name: "Next" }),
   runWorkflowButton: (page: Page): Locator =>
