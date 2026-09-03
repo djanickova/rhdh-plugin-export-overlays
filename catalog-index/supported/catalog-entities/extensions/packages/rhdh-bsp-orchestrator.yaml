@@ -18,12 +18,12 @@ metadata:
 spec:
   packageName: '@red-hat-developer-hub/backstage-plugin-orchestrator'
 
-  # Tag: bs_1.49.4__5.7.13, Build date: 2026-06-02T17:21:47Z
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-orchestrator@sha256:5a0eacffb81f0ff2d9dd86405f7a41ddb4310d30319293ecf01c525b6d744069"
-  version: 5.7.13
+  # Tag: bs_1.54.4__6.1.0, Build date: 2026-06-02T17:21:47Z
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-orchestrator@sha256:a3a7f3b3506c5caa7a44375773891f18296413cd2cbfcbfe443e4a0efcb5c551"
+  version: 6.1.0
   backstage:
     role: frontend-plugin
-    supportedVersions: 1.49.4
+    supportedVersions: 1.54.4
   author: Red Hat
   support: generally-available
   lifecycle: active
@@ -35,15 +35,18 @@ spec:
         dynamicPlugins:
           frontend:
             red-hat-developer-hub.backstage-plugin-orchestrator:
+              # Legacy exports require `module: Legacy` — they are not available on the default module.
               translationResources:
                 - importName: orchestratorTranslations
-                  module: Alpha
+                  module: Legacy
                   ref: orchestratorTranslationRef
               appIcons:
                 - importName: OrchestratorIcon
                   name: orchestratorIcon
+                  module: Legacy
               dynamicRoutes:
                 - importName: OrchestratorPage
+                  module: Legacy
                   menuItem:
                     icon: orchestratorIcon
                     text: Orchestrator
@@ -61,9 +64,10 @@ spec:
               mountPoints:
                 - mountPoint: entity.page.workflows/cards
                   importName: OrchestratorCatalogTab
+                  module: Legacy
                   config:
                     layout:
                       gridColumn: 1 / -1
-                      if:
-                        anyOf:
-                          - IsOrchestratorCatalogTabAvailable
+                    if:
+                      anyOf:
+                        - hasAnnotation: orchestrator.io/workflows
