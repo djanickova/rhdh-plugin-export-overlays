@@ -1016,7 +1016,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:ec355d2337b3af4567eb8b97d26e9b5312580b2043b1dbb7f91d749830c027bd"
+          "digest": "sha256:f1ef8be46153333e74f5c37e37b8e53ddeaae3b6a25e33a26f6d6051ba21cc5e"
         }
       },
       "package": "@red-hat-developer-hub/backstage-plugin-orchestrator-backend-module-loki",
@@ -1042,7 +1042,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:97c2bf358bdb3d2e9b634471db2923883d8661497cc6d1e320525b86a281c543"
+          "digest": "sha256:c0601a080eef02dcbc4c1a5d87a9fec5c7d7d11c3e03277f4ced9c91cd3251e7"
         }
       },
       "package": "@red-hat-developer-hub/backstage-plugin-orchestrator-backend",
@@ -1068,7 +1068,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:0654edde439b2b8ee167f9ae103e94bdb12aa0d9d91d47de1e5071a3808f17aa"
+          "digest": "sha256:53e62455b9f682c79c778918405e4bb8bf037e8857022d7ed58ae9524e663c73"
         }
       },
       "package": "@red-hat-developer-hub/backstage-plugin-orchestrator-form-widgets",
@@ -1094,7 +1094,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:a3a7f3b3506c5caa7a44375773891f18296413cd2cbfcbfe443e4a0efcb5c551"
+          "digest": "sha256:8595c349351843c9a0ec2674e5db9fb075a630378b2961c90cc5343d40104219"
         }
       },
       "package": "@red-hat-developer-hub/backstage-plugin-orchestrator",
@@ -1120,7 +1120,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:1156949c888cb07bcdba6daf46f5597ca325becba30a3711412b666714fb0d03"
+          "digest": "sha256:6db5dd31d2e61f9327af0c2c147ed06db0b3e3af9eb9a847c94f55caad7c9bbe"
         }
       },
       "package": "@red-hat-developer-hub/backstage-plugin-scaffolder-backend-module-orchestrator",
@@ -1132,11 +1132,7 @@
       "stages": {
         "bootstrap": {
           "status": "pass",
-          "oci_ref": "ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-catalog-backend-module-pingidentity:bs_1.52.0__0.13.0",
-          "bs_version_mismatch": true,
-          "reason": "Backstage version mismatch",
-          "expected_version": "1.54.4",
-          "found_version": "1.52.0"
+          "oci_ref": "ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-catalog-backend-module-pingidentity:bs_1.54.4__0.15.0"
         },
         "registry-enrich": {
           "status": "pass",
@@ -1150,11 +1146,11 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:6c47f34d29a9ef81b98b62015aeb432a3c26ab6714a0ec57e08408a5310eead2"
+          "digest": "sha256:e4a58523a8e8b02fe2e70b9e953d008e9f71113259cf597d1482fa5e75e602e4"
         }
       },
       "package": "@backstage-community/plugin-catalog-backend-module-pingidentity",
-      "version": "0.13.0",
+      "version": "0.15.0",
       "workspace": "pingidentity",
       "overall": "pass"
     },
@@ -1546,136 +1542,6 @@
       "workspace": "app-defaults",
       "overall": "fail"
     },
-    "backstage-plugin-auth-backend-module-github-provider": {
-      "stages": {
-        "bootstrap": {
-          "status": "pass",
-          "oci_ref": "ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-auth-backend-module-github-provider:bs_1.52.0__0.5.4",
-          "bs_version_mismatch": true,
-          "reason": "Backstage version mismatch",
-          "expected_version": "1.54.4",
-          "found_version": "1.52.0"
-        },
-        "image-metadata-fetch": {
-          "status": "pass",
-          "digest": "sha256:02547b16700ef996152c6b9c8ea3985041bdd04ce2f6395a456bb415f884fd0c"
-        },
-        "dpdy": {
-          "status": "pass"
-        },
-        "catalog-index": {
-          "status": "pass"
-        }
-      },
-      "package": "@backstage/plugin-auth-backend-module-github-provider",
-      "version": "0.5.4",
-      "workspace": "backstage",
-      "overall": "pass"
-    },
-    "backstage-plugin-auth-backend-module-gitlab-provider": {
-      "stages": {
-        "bootstrap": {
-          "status": "pass",
-          "oci_ref": "ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-auth-backend-module-gitlab-provider:bs_1.52.0__0.4.4",
-          "bs_version_mismatch": true,
-          "reason": "Backstage version mismatch",
-          "expected_version": "1.54.4",
-          "found_version": "1.52.0"
-        },
-        "image-metadata-fetch": {
-          "status": "pass",
-          "digest": "sha256:e2ae7bfa6ba2748afa722b4309c4e7494b7ad77e25c63e45111fe796f0064b60"
-        },
-        "dpdy": {
-          "status": "pass"
-        },
-        "catalog-index": {
-          "status": "pass"
-        }
-      },
-      "package": "@backstage/plugin-auth-backend-module-gitlab-provider",
-      "version": "0.4.4",
-      "workspace": "backstage",
-      "overall": "pass"
-    },
-    "backstage-plugin-auth-backend-module-guest-provider": {
-      "stages": {
-        "bootstrap": {
-          "status": "pass",
-          "oci_ref": "ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-auth-backend-module-guest-provider:bs_1.52.0__0.2.20",
-          "bs_version_mismatch": true,
-          "reason": "Backstage version mismatch",
-          "expected_version": "1.54.4",
-          "found_version": "1.52.0"
-        },
-        "image-metadata-fetch": {
-          "status": "pass",
-          "digest": "sha256:4ce58b5c87dc79e67eaad5ac41e135d1435be4fe3e80e0a8e20e53ecd71e6557"
-        },
-        "dpdy": {
-          "status": "pass"
-        },
-        "catalog-index": {
-          "status": "pass"
-        }
-      },
-      "package": "@backstage/plugin-auth-backend-module-guest-provider",
-      "version": "0.2.20",
-      "workspace": "backstage",
-      "overall": "pass"
-    },
-    "backstage-plugin-auth-backend-module-microsoft-provider": {
-      "stages": {
-        "bootstrap": {
-          "status": "pass",
-          "oci_ref": "ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-auth-backend-module-microsoft-provider:bs_1.52.0__0.3.16",
-          "bs_version_mismatch": true,
-          "reason": "Backstage version mismatch",
-          "expected_version": "1.54.4",
-          "found_version": "1.52.0"
-        },
-        "image-metadata-fetch": {
-          "status": "pass",
-          "digest": "sha256:288c2538ca2332e4fa130d86f9fc321f95912c099b51de3b97f10ccb1773defa"
-        },
-        "dpdy": {
-          "status": "pass"
-        },
-        "catalog-index": {
-          "status": "pass"
-        }
-      },
-      "package": "@backstage/plugin-auth-backend-module-microsoft-provider",
-      "version": "0.3.16",
-      "workspace": "backstage",
-      "overall": "pass"
-    },
-    "backstage-plugin-auth-backend-module-oidc-provider": {
-      "stages": {
-        "bootstrap": {
-          "status": "pass",
-          "oci_ref": "ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-auth-backend-module-oidc-provider:bs_1.52.0__0.4.17",
-          "bs_version_mismatch": true,
-          "reason": "Backstage version mismatch",
-          "expected_version": "1.54.4",
-          "found_version": "1.52.0"
-        },
-        "image-metadata-fetch": {
-          "status": "pass",
-          "digest": "sha256:2e5678ed032cc9b0502e9eca2fa04620ccd0a83cd481be0a2b3ed88758be06ce"
-        },
-        "dpdy": {
-          "status": "pass"
-        },
-        "catalog-index": {
-          "status": "pass"
-        }
-      },
-      "package": "@backstage/plugin-auth-backend-module-oidc-provider",
-      "version": "0.4.17",
-      "workspace": "backstage",
-      "overall": "pass"
-    },
     "red-hat-developer-hub-backstage-plugin-homepage": {
       "stages": {
         "bootstrap": {
@@ -1786,37 +1652,11 @@
       "version": "4.0.0",
       "workspace": "intelligent-assistant",
       "overall": "fail"
-    },
-    "backstage-community-plugin-auth-backend-module-keycloak-provider": {
-      "stages": {
-        "bootstrap": {
-          "status": "pass",
-          "oci_ref": "ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-auth-backend-module-keycloak-provider:bs_1.52.0__0.4.0",
-          "bs_version_mismatch": true,
-          "reason": "Backstage version mismatch",
-          "expected_version": "1.54.4",
-          "found_version": "1.52.0"
-        },
-        "image-metadata-fetch": {
-          "status": "pass",
-          "digest": "sha256:5ef8ff78aa5a72ad3ff295bfeb96b4b420fe5143b0c043cd3bbfceed04ec1201"
-        },
-        "dpdy": {
-          "status": "pass"
-        },
-        "catalog-index": {
-          "status": "pass"
-        }
-      },
-      "package": "@backstage-community/plugin-auth-backend-module-keycloak-provider",
-      "version": "0.4.0",
-      "workspace": "keycloak",
-      "overall": "pass"
     }
   },
   "summary": {
-    "total": 59,
-    "succeeded": 44,
+    "total": 53,
+    "succeeded": 38,
     "failed": 15
   },
   "status": "partial"
