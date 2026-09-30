@@ -124,37 +124,19 @@ else a backend bundle must satisfy, which is why the backend record carries this
 nothing more.
 
 The consumer is `gatherDynamicPluginsSchemas` in
-`@backstage/backend-dynamic-feature-service`, and **RHDH overrides its locator**
-(`rhdh:packages/backend/src/index.ts`):
+`@backstage/backend-dynamic-feature-service`. RHDH's locator returns the same supported
+path for every dynamic plugin role:
 
 ```ts
-schemaLocator(pluginPackage) {
-  const platform = PackageRoles.getRoleInfo(pluginPackage.manifest.backstage.role).platform;
-  return path.join(platform === "node" ? "dist" : "dist-scalprum", "configSchema.json");
+schemaLocator() {
+  return "dist/.config-schema.json";
 },
 ```
 
-The locator is keyed on the package's **role**, so which file matters depends on the half:
-`getRoleInfo("frontend-plugin").platform` is `"web"`, while both backend roles are `"node"`
-(verified by executing `@backstage/cli-node`, not inferred). Neither is
-`dist/.config-schema.json`, which is only the upstream default. The export writes one file
-per consumer, which is why there are two:
-
-| Role                                       | RHDH reads                        | Upstream default reads     |
-| ------------------------------------------ | --------------------------------- | -------------------------- |
-| `frontend-plugin`                          | `dist-scalprum/configSchema.json` | `dist/.config-schema.json` |
-| `backend-plugin` / `backend-plugin-module` | `dist/configSchema.json`          | `dist/.config-schema.json` |
-
-Note how close the backend row is: RHDH's file and the upstream default are **siblings in
-`dist/`, differing only by filename**. A check written against `.config-schema.json` — the
-name that appears in the gatherer's own default locator — passes an artifact whose config
-RHDH drops in silence.
-
-Only RHDH's path is failed on, and it is checked **whether or not its directory exists** —
-its absence is the fault. Gating it on the directory left an NFS-only bundle, which ships no
-`dist-scalprum/` at all, passing while RHDH dropped its config in silence. The upstream copy
-is reported with `consumer: "upstream-default"` and never failed: rejecting an artifact over
-a file this platform ignores would be a false positive.
+`dist/.config-schema.json` is therefore the only schema path the harness validates for
+frontend, backend, and backend-module artifacts. It is checked **whether or not its
+directory exists**: its absence is the fault. Legacy `dist/configSchema.json` and
+`dist-scalprum/configSchema.json` files do not satisfy the artifact contract.
 
 The gatherer drops a schema in four ways, which is what the states below mirror:
 
@@ -200,12 +182,10 @@ Failing on an empty schema alone would accuse 32 packages of a bug they do not h
 messages keep "declares no configuration" and "declares configuration and shipped no
 schema" apart.
 
-The backend half splits the same way, and the gate matters just as much there. Over all 107
-published backend artifacts this repo lists — every tier, `backend-plugin` and
-`backend-plugin-module` — 54 declare `configSchema` and all 54 ship a usable
-`dist/configSchema.json`; of the 53 that declare nothing, 40 ship `{}` and 13 ship a
-non-empty schema contributed entirely by dependencies. So the check finds nothing today,
-and it would have accused 40 packages had it failed on the empty schema alone.
+The backend half follows the same declaration rule. Only packages that declare
+`configSchema` fail for a missing, empty, unreadable, or invalid
+`dist/.config-schema.json`; a package that declares no configuration is reported but does
+not fail the check.
 
 #### Module-federation manifest (`frontend.bundles[].mf`)
 
@@ -329,6 +309,16 @@ Two deliberate differences from feeding the index straight to the install CLI:
 no artifact to pull. `results.json` records the split in `catalogIndex`
 (`declared` / `refCount` / `inImage` / `enabledInIndex`), so a pass cannot hide that most
 of the index was never installed.
+
+Every remaining ref is probed first with `skopeo inspect --raw` (up to 3 attempts, 8 refs
+at a time, falling back from `registry.access.redhat.com/rhdh/` to `quay.io/rhdh/` as the
+install CLI does), and its manifest gets the same plugin-path check the install CLI runs.
+A ref the CLI would refuse (missing from the registry, an `io.backstage.dynamic-packages`
+annotation that names no plugin, or one naming several with no `!plugin-path` selector) is
+left out of the install and listed in `catalogIndex.unresolved`, and the run ends
+`fail-install`. Without this, the install CLI aborts on the first such ref and the run
+validates none of the other packages. The `next` index spent most of September 2026 in
+that state, one broken ref after another.
 
 Exclusions for this mode live in `catalog-index-sanity-excludes.txt` and are written
 against the **OCI image name** (`backstage-community-plugin-quay`), because a catalog index
